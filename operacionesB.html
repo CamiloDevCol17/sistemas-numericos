@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora de Binarios</title>
+	<link rel="stylesheet" type="text/css" href="glider5.css">
+</head>
+<body>
+	<h1>Calculadora de Binarios</h1>
+	<table>
+		<tr>
+			<td>Primer número binario:</td>
+			<td><input type="text" id="numero1"></td>
+		</tr>
+		<tr>
+			<td>Segundo número binario:</td>
+			<td><input type="text" id="numero2"></td>
+		</tr>
+		<tr>
+			<td>Operación:</td>
+			<td>
+				<select id="operacion">
+					<option value="sumar">Sumar</option>
+					<option value="restar">Restar</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><button onclick="calcular()">Calcular</button></td>
+		</tr>
+	</table>
+	<div id="resultado"></div>
+    
+    <a href="clubes.html">binario</a>
+    <a href="clubes2.html">octal</a>
+    <a href="clubes3.html">Decimal</a>
+    <a href="clubes4.html">Hexadecimal</a>
+	<script src="binarios.js"></script>
+</body>
+</html>

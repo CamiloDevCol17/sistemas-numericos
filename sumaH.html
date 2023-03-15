@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Suma de números hexadecimales en binario</title>
+  <link rel="stylesheet" type="text/css" href="glider6.css">
+</head>
+<body>
+  <h1>Suma de números hexadecimales en binario</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Hexadecimal</th>
+        <th>Binario</th>
+      </tr>
+    </thead>
+    <tbody id="conversiones">
+    </tbody>
+  </table>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Hexadecimal 1</th>
+        <th>Hexadecimal 2</th>
+        <th>Binario 1</th>
+        <th>Binario 2</th>
+        <th>Resultado binario</th>
+      </tr>
+    </thead>
+    <tbody id="suma">
+      <tr>
+        <td><input type="text" id="hex1"></td>
+        <td><input type="text" id="hex2"></td>
+        <td><input type="text" id="bin1" readonly></td>
+        <td><input type="text" id="bin2" readonly></td>
+        <td><input type="text" id="result" readonly></td>
+      </tr>
+      <tr>
+        <td colspan="5"><button onclick="sumar()">Sumar</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="main6.js"></script>
+</body>
+</html>

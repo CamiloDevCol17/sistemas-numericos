@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    display: flex;
+}
+.tema{
+    display: block;
+    background: #685d50;
+    width: 200px;
+    height: 200px;
+}
+.tema:hover{
+    background-color: blue;
+}
+.tema .title_general{
+    text-align: center;
+    justify-content: center;
+}

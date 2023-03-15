@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Conversor de número binario</title>
+	<style>
+		input[type="text"] {
+			padding: 10px;
+			font-size: 16px;
+			margin-right: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 300px;
+		}
+		input[type="button"] {
+			padding: 10px;
+			font-size: 16px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		h2 {
+			margin-top: 30px;
+		}
+	</style>
+</head>
+<body>
+	<h2>Conversor de número binario</h2>
+	<input type="text" id="binary" placeholder="Introduce un número binario">
+	<input type="button" value="Convertir" onclick="convertir()">
+	<p>Octal: <span id="octal"></span></p>
+	<p>Decimal: <span id="decimal"></span></p>
+	<p>Hexadecimal: <span id="hexadecimal"></span></p>
+	<script src="main.js"></script>
+</body>
+</html>

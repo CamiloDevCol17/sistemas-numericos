@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Suma de números binarios</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"] {
+      width: 200px;
+      padding: 5px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 3px;
+      background-color: #337ab7;
+      color: #fff;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #286090;
+    }
+    #resultado {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <form id="formulario">
+    <label for="bin1">Número binario 1:</label>
+    <input type="text" id="bin1" name="bin1" maxlength="16" pattern="[01]{1,16}" required>
+    <label for="bin2">Número binario 2:</label>
+    <input type="text" id="bin2" name="bin2" maxlength="16" pattern="[01]{1,16}" required>
+    <button type="submit">Sumar</button>
+  </form>
+  <div id="resultado"></div>
+
+  <script>
+    function binToDec(bin) {
+      return parseInt(bin, 2);
+    }
+
+    function decToBin(dec) {
+      return dec.toString(2).padStart(16, '0');
+    }
+
+    function sumarBin() {
+      let bin1 = document.getElementById('bin1').value;
+      let bin2 = document.getElementById('bin2').value;
+
+      let dec1 = binToDec(bin1);
+      let dec2 = binToDec(bin2);
+      let sumaDec = dec1 + dec2;
+      let sumaBin = decToBin(sumaDec);
+
+      document.getElementById('resultado').innerHTML = 'Resultado: ' + sumaBin;
+    }
+
+    document.getElementById('formulario').addEventListener('submit', function(event) {
+      event.preventDefault();
+      sumarBin();
+    });
+  </script>
+</body>
+</html>

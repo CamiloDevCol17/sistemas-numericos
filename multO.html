@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Multiplicación de números octales</title>
+    <link rel="stylesheet" href="glider7.css">
+  </head>
+  <body>
+    <h1>Multiplicación de números octales</h1>
+    <form>
+      <label for="num1">Número 1 (en octal):</label>
+      <input type="text" id="num1" name="num1" pattern="[0-7]+" required>
+      <br>
+      <label for="num2">Número 2 (en octal):</label>
+      <input type="text" id="num2" name="num2" pattern="[0-7]+" required>
+      <br>
+      <button type="button" onclick="multiplicar()">Multiplicar</button>
+    </form>
+    <p id="resultado"></p>
+    <script src="main7.js"></script>
+  </body>
+</html>
